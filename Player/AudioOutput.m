@@ -22,7 +22,7 @@
 #include <strings.h>
 #include <libkern/OSAtomic.h>
 #include <dispatch/dispatch.h>
-#include </usr/include/mach/vm_map.h>
+#include <mach/vm_map.h>
 
 #import "AudioOutput.h"
 #import "AppController.h"

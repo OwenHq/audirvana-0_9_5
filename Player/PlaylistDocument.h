@@ -19,7 +19,7 @@
  Original code written by Damien Plisson 10/2010 */
 
 #import <Cocoa/Cocoa.h>
-#import <PlaylistArrayController.h>
+#import "PlaylistArrayController.h"
 
 #include <dispatch/dispatch.h>
 

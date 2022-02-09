@@ -8,23 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
-		6D06C3D51260575B00A51557 /* AudioFileFLACLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D06C3D41260575B00A51557 /* AudioFileFLACLoader.m */; };
 		6D0C9A47136C398E00E1759B /* Playlist.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C9A49136C398E00E1759B /* Playlist.xib */; };
 		6D1028461286C184006391A4 /* AudirvanaAppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6D1028451286C184006391A4 /* AudirvanaAppIcon.icns */; };
 		6D17CCDF136478A800740C02 /* AudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA9BB2123D04550083B20D /* AudioOutput.m */; };
 		6D17CCE2136478F100740C02 /* libAudioOutputLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D17CCD61364784100740C02 /* libAudioOutputLib.a */; };
 		6D198F86120DB867006313FC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D198F85120DB867006313FC /* AudioToolbox.framework */; };
 		6D2AA7BE131AD20000F4D2B0 /* AudirvanaBlackAppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6D2AA7BD131AD20000F4D2B0 /* AudirvanaBlackAppIcon.icns */; };
-		6D45B35B1350820E0077E721 /* libsndfile.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D45B35A1350820E0077E721 /* libsndfile.dylib */; };
-		6D45B35C135082170077E721 /* libsndfile.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D45B35A1350820E0077E721 /* libsndfile.dylib */; };
 		6D45B35E135085CC0077E721 /* libtag.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D45B35D135085CC0077E721 /* libtag.dylib */; };
-		6D45B35F135085E40077E721 /* libtag.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D45B35D135085CC0077E721 /* libtag.dylib */; };
-		6D49A8EE1285CF2E003B8D97 /* libsamplerate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D49A8ED1285CF2E003B8D97 /* libsamplerate.a */; };
-		6D4AB80F1299B22F00E92F02 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4AB80E1299B22F00E92F02 /* Sparkle.framework */; };
-		6D4AB81E1299B2B800E92F02 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D4AB80E1299B22F00E92F02 /* Sparkle.framework */; };
+		6D45B35F135085E40077E721 /* libtag.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D45B35D135085CC0077E721 /* libtag.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6D4AB8431299B66600E92F02 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 6D4AB8421299B66600E92F02 /* dsa_pub.pem */; };
 		6D54ECB8123D73AE009E146F /* PlaylistView_Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54ECB7123D73AE009E146F /* PlaylistView_Delegate.m */; };
-		6D5D2028122905B300D16D29 /* AudioFileCoreAudioLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D2027122905B300D16D29 /* AudioFileCoreAudioLoader.mm */; };
 		6D5D203C12290C4000D16D29 /* AudioFileLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D203B12290C4000D16D29 /* AudioFileLoader.m */; };
 		6D6001A4129017B3006B4701 /* HIDRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6001A3129017B3006B4701 /* HIDRemote.m */; };
 		6D6001E212902125006B4701 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6001E112902125006B4701 /* IOKit.framework */; };
@@ -102,11 +95,6 @@
 		6DD906561335F0B800A09DB1 /* TrackNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD906551335F0B800A09DB1 /* TrackNumberFormatter.m */; };
 		6DF17B3A126984A900051593 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF17B39126984A900051593 /* PreferenceController.m */; };
 		6DF17B3D1269857800051593 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DF17B3B1269857800051593 /* Preferences.xib */; };
-		6DF49FE3123B50FC00191768 /* AudioFileSndFileLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DF49FE2123B50FC00191768 /* AudioFileSndFileLoader.mm */; };
-		6DF4A038123B523F00191768 /* libFLAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF4A036123B523F00191768 /* libFLAC.a */; };
-		6DF4A0B5123B609A00191768 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF4A0B3123B609A00191768 /* libogg.a */; };
-		6DF4A0B6123B609A00191768 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF4A0B4123B609A00191768 /* libvorbis.a */; };
-		6DF4A0BC123B60BB00191768 /* libvorbisenc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF4A0BB123B60BB00191768 /* libvorbisenc.a */; };
 		6DFFED8E136CB29200D0B454 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFFED8D136CB29200D0B454 /* Carbon.framework */; };
 		6DFFED8F136CB29D00D0B454 /* NSObject+SPInvocationGrabbing.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFFED8B136CB21600D0B454 /* NSObject+SPInvocationGrabbing.m */; };
 		6DFFED90136CB2A100D0B454 /* SPMediaKeyTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFFED88136CAFA900D0B454 /* SPMediaKeyTap.m */; };
@@ -135,8 +123,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				6D45B35F135085E40077E721 /* libtag.dylib in CopyFiles */,
-				6D45B35C135082170077E721 /* libsndfile.dylib in CopyFiles */,
-				6D4AB81E1299B2B800E92F02 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,8 +152,6 @@
 		6D016B23136C202C00555E24 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6D016B24136C202C00555E24 /* fr */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = fr; path = fr.lproj/Credits.rtfd; sourceTree = "<group>"; };
 		6D016B25136C202C00555E24 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Debug.xib; sourceTree = "<group>"; };
-		6D06C3D31260575B00A51557 /* AudioFileFLACLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFileFLACLoader.h; path = AudioFileUtils/AudioFileFLACLoader.h; sourceTree = "<group>"; };
-		6D06C3D41260575B00A51557 /* AudioFileFLACLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioFileFLACLoader.m; path = AudioFileUtils/AudioFileFLACLoader.m; sourceTree = "<group>"; };
 		6D0C9A4B136C399700E1759B /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Playlist.xib; sourceTree = "<group>"; };
 		6D1028451286C184006391A4 /* AudirvanaAppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = AudirvanaAppIcon.icns; path = Images/AudirvanaAppIcon.icns; sourceTree = "<group>"; };
 		6D17CCD61364784100740C02 /* libAudioOutputLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAudioOutputLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,8 +166,6 @@
 		6D4AB8421299B66600E92F02 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		6D54ECB6123D73AE009E146F /* PlaylistView_Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaylistView_Delegate.h; path = Player/PlaylistView_Delegate.h; sourceTree = "<group>"; };
 		6D54ECB7123D73AE009E146F /* PlaylistView_Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaylistView_Delegate.m; path = Player/PlaylistView_Delegate.m; sourceTree = "<group>"; };
-		6D5D2026122905B300D16D29 /* AudioFileCoreAudioLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFileCoreAudioLoader.h; path = AudioFileUtils/AudioFileCoreAudioLoader.h; sourceTree = "<group>"; };
-		6D5D2027122905B300D16D29 /* AudioFileCoreAudioLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AudioFileCoreAudioLoader.mm; path = AudioFileUtils/AudioFileCoreAudioLoader.mm; sourceTree = "<group>"; };
 		6D5D203B12290C4000D16D29 /* AudioFileLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioFileLoader.m; path = AudioFileUtils/AudioFileLoader.m; sourceTree = "<group>"; };
 		6D6001A3129017B3006B4701 /* HIDRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HIDRemote.m; path = withSource/HIDRemote.m; sourceTree = "<group>"; };
 		6D6001E112902125006B4701 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -285,8 +267,6 @@
 		6DF17B38126984A900051593 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferenceController.h; path = Application/PreferenceController.h; sourceTree = "<group>"; };
 		6DF17B39126984A900051593 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferenceController.m; path = Application/PreferenceController.m; sourceTree = "<group>"; };
 		6DF17B3C1269857800051593 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
-		6DF49FE1123B50FC00191768 /* AudioFileSndFileLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFileSndFileLoader.h; path = AudioFileUtils/AudioFileSndFileLoader.h; sourceTree = "<group>"; };
-		6DF49FE2123B50FC00191768 /* AudioFileSndFileLoader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AudioFileSndFileLoader.mm; path = AudioFileUtils/AudioFileSndFileLoader.mm; sourceTree = "<group>"; };
 		6DF4A036123B523F00191768 /* libFLAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFLAC.a; sourceTree = "<group>"; };
 		6DF4A0B3123B609A00191768 /* libogg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libogg.a; sourceTree = "<group>"; };
 		6DF4A0B4123B609A00191768 /* libvorbis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libvorbis.a; sourceTree = "<group>"; };
@@ -318,14 +298,7 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				6D7A5D1812085DC900007F5D /* CoreAudio.framework in Frameworks */,
 				6D198F86120DB867006313FC /* AudioToolbox.framework in Frameworks */,
-				6DF4A038123B523F00191768 /* libFLAC.a in Frameworks */,
-				6DF4A0B5123B609A00191768 /* libogg.a in Frameworks */,
-				6DF4A0B6123B609A00191768 /* libvorbis.a in Frameworks */,
-				6DF4A0BC123B60BB00191768 /* libvorbisenc.a in Frameworks */,
-				6D49A8EE1285CF2E003B8D97 /* libsamplerate.a in Frameworks */,
 				6D6001E212902125006B4701 /* IOKit.framework in Frameworks */,
-				6D4AB80F1299B22F00E92F02 /* Sparkle.framework in Frameworks */,
-				6D45B35B1350820E0077E721 /* libsndfile.dylib in Frameworks */,
 				6D45B35E135085CC0077E721 /* libtag.dylib in Frameworks */,
 				6DFFED8E136CB29200D0B454 /* Carbon.framework in Frameworks */,
 			);
@@ -445,12 +418,6 @@
 			children = (
 				6D5D203B12290C4000D16D29 /* AudioFileLoader.m */,
 				6DCC57791226D93900BDCF56 /* AudioFileLoader.h */,
-				6D5D2026122905B300D16D29 /* AudioFileCoreAudioLoader.h */,
-				6D5D2027122905B300D16D29 /* AudioFileCoreAudioLoader.mm */,
-				6DF49FE1123B50FC00191768 /* AudioFileSndFileLoader.h */,
-				6DF49FE2123B50FC00191768 /* AudioFileSndFileLoader.mm */,
-				6D06C3D31260575B00A51557 /* AudioFileFLACLoader.h */,
-				6D06C3D41260575B00A51557 /* AudioFileFLACLoader.m */,
 			);
 			name = AudioUtils;
 			sourceTree = "<group>";
@@ -710,6 +677,11 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Free Software";
+				TargetAttributes = {
+					8D1107260486CEB800E47090 = {
+						DevelopmentTeam = SUFJ6R3Z4X;
+					};
+				};
 			};
 			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Audirvana" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -721,6 +693,7 @@
 				French,
 				German,
 				fr,
+				de,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* TrueAudioPlayer */;
 			projectDirPath = "";
@@ -826,13 +799,10 @@
 				77C8280E06725ACE000B614F /* Audirvana_AppDelegate.m in Sources */,
 				770B37ED0679A11B001EADE2 /* Audirvana_DataModel.xcdatamodel in Sources */,
 				6D7A5CD51208569300007F5D /* AppController.m in Sources */,
-				6D5D2028122905B300D16D29 /* AudioFileCoreAudioLoader.mm in Sources */,
 				6D5D203C12290C4000D16D29 /* AudioFileLoader.m in Sources */,
-				6DF49FE3123B50FC00191768 /* AudioFileSndFileLoader.mm in Sources */,
 				6DBA9BE3123D06850083B20D /* PlaylistDocument.m in Sources */,
 				6DBA9BE6123D06D10083B20D /* PlaylistItem.m in Sources */,
 				6D54ECB8123D73AE009E146F /* PlaylistView_Delegate.m in Sources */,
-				6D06C3D51260575B00A51557 /* AudioFileFLACLoader.m in Sources */,
 				6DF17B3A126984A900051593 /* PreferenceController.m in Sources */,
 				6D92F2C0127C835600C6682F /* PlaylistArrayController.m in Sources */,
 				6D92F2C8127CBF8700C6682F /* PlaylistView.m in Sources */,
@@ -935,7 +905,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = SUFJ6R3Z4X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/extern\"",
@@ -954,6 +926,8 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/extern/lib\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.audirvana;
 				PRODUCT_NAME = Audirvana;
 				WRAPPER_EXTENSION = app;
 			};
@@ -963,7 +937,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LIBRARY = "libc++";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SUFJ6R3Z4X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/extern\"",
@@ -980,6 +956,8 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/extern/lib\"",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.audirvana;
 				PRODUCT_NAME = Audirvana;
 				WRAPPER_EXTENSION = app;
 			};

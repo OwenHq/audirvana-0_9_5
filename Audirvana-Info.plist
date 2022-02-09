@@ -207,7 +207,7 @@
 	<key>CFBundleIconFile</key>
 	<string>AudirvanaAppIcon.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>fr.dplisson.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

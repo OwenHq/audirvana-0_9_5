@@ -24,9 +24,6 @@
 #import "PreferenceController.h"
 
 #import "AudioFileLoader.h"
-#import "AudioFileCoreAudioLoader.h"
-#import	"AudioFileSndFileLoader.h"
-#import "AudioFileFLACLoader.h"
 
 #include <dispatch/dispatch.h>
 #include <samplerate/samplerate.h>
@@ -38,33 +35,20 @@
 {
 	NSMutableArray *fileExts = [[NSMutableArray alloc] init];
 
-	[fileExts addObjectsFromArray:[AudioFileFLACLoader supportedFileExtensions]];
-	[fileExts addObjectsFromArray:[AudioFileSndFileLoader supportedFileExtensions]];
-	[fileExts addObjectsFromArray:[AudioFileCoreAudioLoader supportedFileExtensions]];
+//	[fileExts addObjectsFromArray:[AudioFileFLACLoader supportedFileExtensions]];
+//	[fileExts addObjectsFromArray:[AudioFileCoreAudioLoader supportedFileExtensions]];
 
 	return [fileExts autorelease];
 }
 
 + (bool)isFormatSupported:(NSURL*)fileURL
 {
-	return ([AudioFileFLACLoader isFormatSupported:fileURL]
-			|| [AudioFileSndFileLoader isFormatSupported:fileURL]
-			|| [AudioFileCoreAudioLoader isFormatSupported:fileURL]);
+	return false;
 }
 
 + (id)createWithURL:(NSURL*)urlToOpen
 {
 	id newLoaderObject = nil;
-
-	if ([AudioFileFLACLoader isFormatSupported:urlToOpen]) {
-		newLoaderObject = [[AudioFileFLACLoader alloc] initWithURL:urlToOpen];
-	}
-	else if ([AudioFileSndFileLoader isFormatSupported:urlToOpen]) {
-		newLoaderObject = [[AudioFileSndFileLoader alloc] initWithURL:urlToOpen];
-	}
-	else if ([AudioFileCoreAudioLoader isFormatSupported:urlToOpen]) {
-			newLoaderObject = [[AudioFileCoreAudioLoader alloc] initWithURL:urlToOpen];
-	}
 
 	return [newLoaderObject autorelease];
 }

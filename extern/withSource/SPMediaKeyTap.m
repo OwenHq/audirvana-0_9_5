@@ -64,22 +64,22 @@ static CGEventRef tapEventCallback(CGEventTapProxy proxy, CGEventType type, CGEv
 -(void)startWatchingMediaKeys;{
 	[self setShouldInterceptMediaKeyEvents:YES];
 
-    if (!_eventPort) {
-        // Add an event tap to intercept the system defined media key events
-        _eventPort = CGEventTapCreate(kCGSessionEventTap,
-                                      kCGHeadInsertEventTap,
-                                      kCGEventTapOptionDefault,
-                                      CGEventMaskBit(NX_SYSDEFINED),
-                                      tapEventCallback,
-                                      self);
-        assert(_eventPort != NULL);
-
-        _eventPortSource = CFMachPortCreateRunLoopSource(kCFAllocatorSystemDefault, _eventPort, 0);
-        assert(_eventPortSource != NULL);
-
-        // Let's do this in a separate thread so that a slow app doesn't lag the event tap
-        [NSThread detachNewThreadSelector:@selector(eventTapThread) toTarget:self withObject:nil];
-    }
+//    if (!_eventPort) {
+//        // Add an event tap to intercept the system defined media key events
+//        _eventPort = CGEventTapCreate(kCGSessionEventTap,
+//                                      kCGHeadInsertEventTap,
+//                                      kCGEventTapOptionDefault,
+//                                      CGEventMaskBit(NX_SYSDEFINED),
+//                                      tapEventCallback,
+//                                      self);
+//        assert(_eventPort != NULL);
+//
+//        _eventPortSource = CFMachPortCreateRunLoopSource(kCFAllocatorSystemDefault, _eventPort, 0);
+//        assert(_eventPortSource != NULL);
+//
+//        // Let's do this in a separate thread so that a slow app doesn't lag the event tap
+//        [NSThread detachNewThreadSelector:@selector(eventTapThread) toTarget:self withObject:nil];
+//    }
 }
 -(void)stopWatchingMediaKeys;
 {
